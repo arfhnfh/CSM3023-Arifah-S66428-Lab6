@@ -1,0 +1,56 @@
+CREATE DATABASE csm3023lab6;
+
+CREATE TABLE FirstTable(NAME VARCHAR(250));
+
+SELECT*FROM FirstTable;
+
+CREATE TABLE AUTHOR (
+authno VARCHAR (15) PRIMARY KEY,
+NAME VARCHAR (40),
+address VARCHAR (40),
+city VARCHAR (40),
+state VARCHAR (40),
+zip VARCHAR (40));
+
+ALTER TABLE Author MODIFY authno VARCHAR(255) NULL;
+
+ALTER TABLE Author DROP PRIMARY KEY;
+
+ALTER TABLE Author MODIFY authno VARCHAR(255) NULL;
+
+ALTER TABLE Author ADD PRIMARY KEY (new_primary_key_column);
+
+CREATE TABLE Student (
+    student_id VARCHAR(10) PRIMARY KEY,
+    student_name VARCHAR(100),
+    student_program VARCHAR(50)
+);
+
+CREATE DATABASE IF NOT EXISTS csm3023lab6;
+USE csm3023lab6;
+
+CREATE TABLE books (
+    icno VARCHAR(20) NOT NULL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    category VARCHAR(10) NOT NULL
+);
+
+CREATE DATABASE IF NOT EXISTS csm3023lab6;
+USE csm3023lab6;
+
+CREATE TABLE marathon (
+    icno VARCHAR(20) NOT NULL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    category VARCHAR(10) NOT NULL
+);
+
+CREATE TABLE userprofile (
+    username CHAR(15) PRIMARY KEY,
+    password CHAR(10),
+    firstname VARCHAR(50),
+    lastname VARCHAR(50)
+);
+
+
+
+
